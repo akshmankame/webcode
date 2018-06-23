@@ -1,0 +1,112 @@
+// out:../css/welcome.css, sourcemap: true, compress: true
+@import (less) "../css/normalize.css";
+@import "mixins";
+//@import "balloon";
+@import "bubble";
+
+body {
+    font-family: sans-serif;
+}
+
+/*Modifiers Start*/
+
+.theme--white {
+    color: @white
+}
+
+.align--center {
+    text-align: center;
+}
+
+.avm--gradient {
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+    background: -moz-linear-gradient(to right, #EC6EAD, #3494E6);
+    background: -ms-linear-gradient(to right, #EC6EAD, #3494E6);
+    background: -o-linear-gradient(to right, #EC6EAD, #3494E6);
+    background: linear-gradient(to right, #EC6EAD, #3494E6);
+}
+
+.show--ball {
+    opacity: 1;
+}
+
+/*Modifiers End*/
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.row__container {
+    max-width: 1199px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    &:after {
+        .clear
+    }
+    &:before {
+        .horizon
+    }
+}
+
+.row__content {
+    padding-top: 20px;
+    display: inline-block;
+    max-width: 600px;
+    position: relative;
+}
+
+.row__headline {
+    text-transform: uppercase;
+}
+
+.row__headline__unbold {
+    display: inline-block;
+    font-weight: normal;
+}
+
+.row__profile {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    display: inline-block;
+}
+
+.profile--img {
+    max-width: 100%;
+    border-radius: 50%;
+    border:2px solid @white;
+    box-sizing: border-box;
+}
+
+.row__bubani {
+    opacity: 1;
+}
+
+.row__ullist {
+    list-style-type: none;
+}
+
+.row__list {
+    width: 220px;
+    padding: 12px;
+    border:2px solid @white;
+    font-size:20px;
+    display: inline-block;
+    margin-right: 10px;
+    box-sizing: border-box;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -o-transition: background 0.5s;
+    transition: background 0.5s;
+    &:last-child {
+        margin-right:0;
+    }
+    &:hover {
+        background: @white;
+        color: #cc2b5e;
+    }
+}

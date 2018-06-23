@@ -1,0 +1,124 @@
+/*variable*/
+/*clear float*/
+/*center vertically*/
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v10/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+.row__htmlbub {
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+  background-color: #8ee4af;
+  border-radius: 10%;
+  position: absolute;
+  top: 130px;
+  left: -12px;
+  opacity: 0;
+  transition: opacity 0.5s linear 0.5s;
+}
+.row__htmlbub:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.row__htmlbubContent,
+.row__cssbubContent,
+.row__jqbubContent {
+  font-family: 'Bangers', cursive;
+}
+.row__htmlbubContent {
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #05386b;
+}
+.row__htmlbubContent:after {
+  content: '';
+  position: absolute;
+  top: 46px;
+  left: -13px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #8ee4af;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+.row__cssbub {
+  display: inline-block;
+  width: 135px;
+  height: 110px;
+  background-color: #2f2fa2;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  right: -120px;
+  opacity: 0;
+  transition: opacity 1.5s linear 1.5s;
+}
+.row__cssbub:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.row__cssbubContent {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.row__cssbubContent:after {
+  content: '';
+  position: absolute;
+  top: 62px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #2f2fa2;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+.row__jqbub {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: #FF3333;
+  position: absolute;
+  top: 70px;
+  right: -120px;
+  opacity: 1;
+  transition: opacity 1.5s linear 1.5s;
+}
+.row__jqbub:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.row__jqbubContent {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.row__jqbubContent:after {
+  content: '';
+  position: absolute;
+  top: 62px;
+  left: -3px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #F33332;
+  border-bottom: transparent;
+  border-left: transparent;
+}
