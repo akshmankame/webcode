@@ -11,6 +11,9 @@
     top: 130px;
     left: -12px;
     opacity: 0;
+    -webkit-transition: opacity 0.5s linear 0.5s;
+    -moz-transition: opacity 0.5s linear 0.5s;
+    -o-transition: opacity 0.5s linear 0.5s;
     transition: opacity 0.5s linear 0.5s;
     &:before {
         .horizon
@@ -51,6 +54,9 @@
     top: 70px;
     right: -120px;
     opacity: 0;
+    -webkit-transition: opacity 1.5s linear 1.5s;
+    -moz-transition: opacity 1.5s linear 1.5s;
+    -o-transition: opacity 1.5s linear 1.5s;
     transition: opacity 1.5s linear 1.5s;
     &:before {
         .horizon
@@ -86,6 +92,9 @@
     top: 200px;
     right: 130px;
     opacity: 0;
+    -webkit-transition: opacity 2s linear 2s;
+    -moz-transition: opacity 2s linear 2s;
+    -o-transition: opacity 2s linear 2s;
     transition: opacity 2s linear 2s;
     &:before {
         .horizon
@@ -122,6 +131,9 @@
     top: 300px;
     left: 90px;
     opacity: 0;
+    -webkit-transition: opacity 2.5s linear 2.5s;
+    -moz-transition: opacity 2.5s linear 2.5s;
+    -o-transition: opacity 2.5s linear 2.5s;
     transition: opacity 2.5s linear 2.5s;
     &:before {
         .horizon
@@ -158,6 +170,9 @@
     top: 42px;
     right: -20px;
     opacity: 0;
+    -webkit-transition: opacity 3s linear 3s;
+    -moz-transition: opacity 3s linear 3s;
+    -o-transition: opacity 3s linear 3s;
     transition: opacity 3s linear 3s;
     &:before {
         .horizon
@@ -194,6 +209,9 @@
     top: 60px;
     left: -68px;
     opacity: 0;
+    -webkit-transition: opacity 3.5s linear 3.5s;
+    -moz-transition: opacity 3.5s linear 3.5s;
+    -o-transition: opacity 3.5s linear 3.5s;
     transition: opacity 3.5s linear 3.5s;
     &:before {
         .horizon
@@ -230,6 +248,9 @@
     top: 112px;
     left: 136px;
     opacity: 0;
+    -webkit-transition: opacity 4s linear 4s;
+    -moz-transition: opacity 4s linear 4s;
+    -o-transition: opacity 4s linear 4s;
     transition: opacity 4s linear 4s;
     &:before {
         .horizon
@@ -238,21 +259,21 @@
 
 .row__bootbubContent {
 	font-size: 28px;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    color: #8860D0;
-    &:after {
-        content: '';
-        position: absolute;
-        top: 60px;
-        left: 40px;
-        width: 0;
-        height: 0;
-        border: 20px solid transparent;
-        border-top-color: #5AB9EA;
-        border-bottom: transparent;
-        border-right: transparent;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #8860D0;
+  &:after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      left: 40px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: #5AB9EA;
+      border-bottom: transparent;
+      border-right: transparent;
     }
 }
 
@@ -266,6 +287,9 @@
     top: 218px;
     left: -78px;
     opacity: 0;
+    -webkit-transition: opacity 4.5s linear 4.5s;
+    -moz-transition: opacity 4.5s linear 4.5s;
+    -o-transition: opacity 4.5s linear 4.5s;
     transition: opacity 4.5s linear 4.5s;
     &:before {
         .horizon
@@ -302,6 +326,9 @@
     top: 230px;
     right: -90px;
     opacity: 0;
+    -webkit-transition: opacity 5s linear 5s;
+    -moz-transition: opacity 5s linear 5s;
+    -o-transition: opacity 5s linear 5s;
     transition: opacity 5s linear 5s;
     &:before {
         .horizon
@@ -326,4 +353,104 @@
         border-bottom: transparent;
         border-right: transparent;
     }
+}
+
+
+/*Mobile Fixes*/
+
+@media(max-width:767px) {
+  .row__htmlbub {
+    width: 70px;
+    height: 55px;
+    left: 0;
+  }
+
+  .row__htmlbubContent {
+    font-size: 18px;
+    &:after {
+      top: 37px;
+      left: -9px;
+      border: 10px solid transparent;
+      border-top-color: #8ee4af;
+      border-bottom: transparent;
+      border-left: transparent;
+    }
+  }
+
+  .row__rwd {
+    width: 75px;
+    height: 50px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .row__rwdbubContent {
+    font-size: 23px;
+    &:after {
+      top: -22px;
+      left: 12px;
+      border: 10px solid transparent;
+      border-left-color: #0ABDA0;
+      border-bottom: transparent;
+      border-right: transparent;
+    }
+  }
+
+  .row__boot {
+    width: 110px;
+    height: 62px;
+    top: 18px;
+    left: 101px;
+  }
+
+  .row__bootbubContent {
+    font-size: 22px;
+    &:after {
+      top: 42px;
+      left: 40px;
+      border: 10px solid transparent;
+      border-top-color: #5AB9EA;
+      border-bottom: transparent;
+      border-right: transparent;
+    }
+  }
+
+  .row__cssbub {
+    width: 90px;
+    height: 70px;
+    top: 98px;
+    right: -28px;
+  }
+
+  .row__cssbubContent {
+    font-size: 26px;
+    &:after {
+      top: 43px;
+      left: -3px;
+      border: 12px solid transparent;
+      border-top-color: #16235A;
+      border-bottom: transparent;
+      border-left: transparent;
+    }
+  }
+
+  .row__less {
+    width: 70px;
+    height: 58px;
+    top: 55px;
+    left: 13px;
+  }
+
+  .row__lessbubContent {
+      font-size: 24px;
+      &:after {
+        top: 8px;
+        left: 51px;
+        border: 10px solid transparent;
+        border-left-color: #C0334D;
+        border-bottom: transparent;
+        border-right: transparent;
+      }
+  }
+
 }
