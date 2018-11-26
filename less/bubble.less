@@ -359,18 +359,24 @@
 /*Mobile Fixes*/
 
 @media(max-width:767px) {
+
+  .row__headline {
+    margin-top: 75px;
+  }
+
   .row__htmlbub {
-    width: 70px;
-    height: 55px;
-    left: 0;
+    width: 55px;
+    height: 40px;
+    top: 90px;
+    left: -28px;
   }
 
   .row__htmlbubContent {
-    font-size: 18px;
+    font-size: 15px;
     &:after {
-      top: 37px;
-      left: -9px;
-      border: 10px solid transparent;
+      top: 28px;
+      left: -6px;
+      border: 8px solid transparent;
       border-top-color: #8ee4af;
       border-bottom: transparent;
       border-left: transparent;
@@ -378,18 +384,18 @@
   }
 
   .row__rwd {
-    width: 75px;
-    height: 50px;
-    top: 15px;
-    right: 15px;
+    width: 60px;
+    height: 40px;
+    top: 32px;
+    right: 8px;
   }
 
   .row__rwdbubContent {
-    font-size: 23px;
+    font-size: 20px;
     &:after {
-      top: -22px;
+      top: -17px;
       left: 12px;
-      border: 10px solid transparent;
+      border: 8px solid transparent;
       border-left-color: #0ABDA0;
       border-bottom: transparent;
       border-right: transparent;
@@ -397,18 +403,18 @@
   }
 
   .row__boot {
-    width: 110px;
-    height: 62px;
+    width: 100px;
+    height: 45px;
     top: 18px;
-    left: 101px;
+    left: 138px;
   }
 
   .row__bootbubContent {
-    font-size: 22px;
+    font-size: 19px;
     &:after {
-      top: 42px;
-      left: 40px;
-      border: 10px solid transparent;
+      top: 32px;
+      left: 32px;
+      border: 8px solid transparent;
       border-top-color: #5AB9EA;
       border-bottom: transparent;
       border-right: transparent;
@@ -416,18 +422,18 @@
   }
 
   .row__cssbub {
-    width: 90px;
-    height: 70px;
-    top: 98px;
-    right: -28px;
+    width: 70px;
+    height: 55px;
+    top: 85px;
+    right: -9px;
   }
 
   .row__cssbubContent {
-    font-size: 26px;
+    font-size: 20px;
     &:after {
-      top: 43px;
+      top: 32px;
       left: -3px;
-      border: 12px solid transparent;
+      border: 10px solid transparent;
       border-top-color: #16235A;
       border-bottom: transparent;
       border-left: transparent;
@@ -435,22 +441,132 @@
   }
 
   .row__less {
-    width: 70px;
-    height: 58px;
-    top: 55px;
-    left: 13px;
+    width: 55px;
+    height: 46px;
+    top: 27px;
+    left: 58px;
   }
 
   .row__lessbubContent {
-      font-size: 24px;
+      font-size: 20px;
       &:after {
         top: 8px;
-        left: 51px;
-        border: 10px solid transparent;
+        left: 40px;
+        border: 8px solid transparent;
         border-left-color: #C0334D;
         border-bottom: transparent;
         border-right: transparent;
       }
+  }
+
+  .row__ai {
+    width: 75px;
+    height: 45px;
+    top: 158px;
+    right: 11px;
+  }
+
+  .row__aibubContent {
+    font-size: 15px;
+    &:after {
+      top: 5px;
+      left: 64px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-left-color: #CB2D6F;
+      border-bottom: transparent;
+      border-right: transparent;
+    }
+  }
+
+  .row__ps {
+    width: 60px;
+    height: 60px;
+    top: 154px;
+    left: 25px;
+  }
+
+  .row__psbubContent {
+    font-size: 26px;
+    &:after {
+      top: 39px;
+      left: 13px;
+      border: 10px solid transparent;
+      border-top-color: #A64AC9;
+      border-bottom: transparent;
+      border-right: transparent;
+    }
+  }
+
+  .row__jqbub {
+    width: 60px;
+    height: 60px;
+    top: 226px;
+    right: 30px;
+  }
+
+  .row__jqbubContent {
+    font-size: 17px;
+    &:after {
+      top: 38px;
+      left: 0px;
+      border: 10px solid transparent;
+      border-top-color: #F33332;
+      border-bottom: transparent;
+      border-left: transparent;
+    }
+  }
+
+  .row__js {
+    width: 100px;
+    height: 50px;
+    top: 244px;
+    left: 28px;
+  }
+
+  .row__jsbubContent {
+    font-size: 20px;
+    &:after {
+      top: 8px;
+      left: -23px;
+      border: 10px solid transparent;
+      border-right-color: #F2A104;
+      border-bottom: transparent;
+      border-left: transparent;
+    }
+  }
+
+  @media (orientation:landscape) {
+    .row__ps {
+      left: 86px;
+    }
+
+    .row__ai {
+      right: 80px;
+    }
+
+    .row__jqbub {
+      right: 132px;
+    }
+
+    .row__js {
+      top: 236px;
+      left: 133px;
+    }
+
+    .row__rwd {
+      right: 83px;
+    }
+
+    .row__boot {
+      left: 225px;
+    }
+
+    .row__cssbub {
+      right: -37px;
+    }
+
   }
 
 }
