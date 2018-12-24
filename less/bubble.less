@@ -9,7 +9,7 @@
     border-radius: 10%;
     position: absolute;
     top: 130px;
-    left: -12px;
+    left: 330px;
     opacity: 0;
     -webkit-transition: opacity 0.5s linear 0.5s;
     -moz-transition: opacity 0.5s linear 0.5s;
@@ -52,12 +52,12 @@
     border-radius: 50%;
     position: absolute;
     top: 70px;
-    right: -120px;
+    right: 245px;
     opacity: 0;
-    -webkit-transition: opacity 1.5s linear 1.5s;
-    -moz-transition: opacity 1.5s linear 1.5s;
-    -o-transition: opacity 1.5s linear 1.5s;
-    transition: opacity 1.5s linear 1.5s;
+    -webkit-transition: opacity 1.5s linear 1s;
+    -moz-transition: opacity 1.5s linear 1s;
+    -o-transition: opacity 1.5s linear 1s;
+    transition: opacity 1.5s linear 1s;
     &:before {
         .horizon
     }
@@ -89,8 +89,8 @@
     height: 120px;
     background-color: #FF3333;
     position: absolute;
-    top: 200px;
-    right: 130px;
+    top: 225px;
+    right: 75px;
     opacity: 0;
     -webkit-transition: opacity 2s linear 2s;
     -moz-transition: opacity 2s linear 2s;
@@ -129,12 +129,12 @@
     position: absolute;
     border-radius: 3%;
     top: 300px;
-    left: 90px;
+    left: 3px;
     opacity: 0;
-    -webkit-transition: opacity 2.5s linear 2.5s;
-    -moz-transition: opacity 2.5s linear 2.5s;
-    -o-transition: opacity 2.5s linear 2.5s;
-    transition: opacity 2.5s linear 2.5s;
+    -webkit-transition: opacity 2.5s linear 2s;
+    -moz-transition: opacity 2.5s linear 2s;
+    -o-transition: opacity 2.5s linear 2s;
+    transition: opacity 2.5s linear 2s;
     &:before {
         .horizon
     }
@@ -168,12 +168,12 @@
     position: absolute;
     border-radius: 5%;
     top: 42px;
-    right: -20px;
+    right: -50px;
     opacity: 0;
-    -webkit-transition: opacity 3s linear 3s;
-    -moz-transition: opacity 3s linear 3s;
-    -o-transition: opacity 3s linear 3s;
-    transition: opacity 3s linear 3s;
+    -webkit-transition: opacity 3s linear 2s;
+    -moz-transition: opacity 3s linear 2s;
+    -o-transition: opacity 3s linear 2s;
+    transition: opacity 3s linear 2s;
     &:before {
         .horizon
     }
@@ -200,19 +200,19 @@
 }
 
 .row__less {
-	display: inline-block;
+	 display: inline-block;
     width: 90px;
     height: 80px;
     background-color: #C0334D;
     position: absolute;
     border-radius: 5%;
-    top: 60px;
-    left: -68px;
+    top: 30px;
+    left: -125px;
     opacity: 0;
-    -webkit-transition: opacity 3.5s linear 3.5s;
-    -moz-transition: opacity 3.5s linear 3.5s;
-    -o-transition: opacity 3.5s linear 3.5s;
-    transition: opacity 3.5s linear 3.5s;
+    -webkit-transition: opacity 3.5s linear 2s;
+    -moz-transition: opacity 3.5s linear 2s;
+    -o-transition: opacity 3.5s linear 2s;
+    transition: opacity 3.5s linear 2s;
     &:before {
         .horizon
     }
@@ -245,13 +245,13 @@
     background-color: #5AB9EA;
     position: absolute;
     border-radius: 3%;
-    top: 112px;
-    left: 136px;
+    top: 90px;
+    left: 70px;
     opacity: 0;
-    -webkit-transition: opacity 4s linear 4s;
-    -moz-transition: opacity 4s linear 4s;
-    -o-transition: opacity 4s linear 4s;
-    transition: opacity 4s linear 4s;
+    -webkit-transition: opacity 4s linear 2s;
+    -moz-transition: opacity 4s linear 2s;
+    -o-transition: opacity 4s linear 2s;
+    transition: opacity 4s linear 2s;
     &:before {
         .horizon
     }
@@ -285,12 +285,12 @@
     position: absolute;
     border-radius: 50%;
     top: 218px;
-    left: -78px;
+    left: -145px;
     opacity: 0;
-    -webkit-transition: opacity 4.5s linear 4.5s;
-    -moz-transition: opacity 4.5s linear 4.5s;
-    -o-transition: opacity 4.5s linear 4.5s;
-    transition: opacity 4.5s linear 4.5s;
+    -webkit-transition: opacity 4.5s linear 2s;
+    -moz-transition: opacity 4.5s linear 2s;
+    -o-transition: opacity 4.5s linear 2s;
+    transition: opacity 4.5s linear 2s;
     &:before {
         .horizon
     }
@@ -323,13 +323,13 @@
     background-color: #CB2D6F;
     position: absolute;
     border-radius: 5%;
-    top: 230px;
-    right: -90px;
+    top: 280px;
+    right: -185px;
     opacity: 0;
-    -webkit-transition: opacity 5s linear 5s;
-    -moz-transition: opacity 5s linear 5s;
-    -o-transition: opacity 5s linear 5s;
-    transition: opacity 5s linear 5s;
+    -webkit-transition: opacity 5s linear 2s;
+    -moz-transition: opacity 5s linear 2s;
+    -o-transition: opacity 5s linear 2s;
+    transition: opacity 5s linear 2s;
     &:before {
         .horizon
     }
@@ -357,7 +357,11 @@
 
 /*Portable devices*/
 
-@media(min-width:768px) and (max-width:1024px) {
+@media(min-width:768px) and (max-width:991px) {
+
+  .row__htmlbub {
+    left: 220px;
+  }
 
   .row__less {
     top: 29px;
@@ -410,7 +414,7 @@
     width: 110px;
     height: 90px;
     top: 70px;
-    right: -60px;
+    right: 165px;
   }
 
   .row__cssbubContent {
@@ -474,25 +478,9 @@
     }
   }
 
-  @media(orientation:landscape) {
-
-    .row__ps {
-      left: 150px;
-    }
-
-    .row__jqbub {
-      right: 220px;
-    }
-
-    .row__rwd {
-      right: 115px;
-    }
-
-  }
-
 }
 
-@media(min-width:1024px) and (max-width:1380px) {
+@media(min-width:991px) and (max-width:1380px) {
 
   .row__rwd {
     top: 26px;
@@ -500,24 +488,34 @@
   }
 
   .row__jqbub {
-    right: 220px;
+    width: 110px;
+    height: 110px;
+    right: 212px;
+  }
+
+  .row__jqbubContent {
+    font-size: 30px;
+    &:after {
+      top: 66px;
+      left: -3px;
+    }
   }
 
   .row__ai {
-    width: 120px;
-    height: 70px;
+    width: 165px;
+    height: 110px;
     top: 155px;
-    right: 45px;
+    right: 20px;
   }
 
   .row__boot {
     top: 12px;
-    left: 245px;
+    left: 170px;
   }
 
   .row__less {
     top: 29px;
-    left: 70px;
+    left: 25px;
   }
 
   .row__ps {
@@ -527,15 +525,11 @@
 
   .row__js {
     top: 320px;
-    left: 120px;
+    left: 50px;
   }
 
-  @media(orientation:landscape) {
-    .row__ai {
-      width: 180px;
-      height: 120px;
-      right: -20px;
-    }
+  .row__cssbub {
+    right: 270px;
   }
 
 }
@@ -559,7 +553,7 @@
     }
 
     .row__jqbub {
-      right: 170px;
+      right: 150px;
     }
 
   }
@@ -577,7 +571,7 @@
     width: 55px;
     height: 40px;
     top: 90px;
-    left: -28px;
+    left: 10px;
   }
 
   .row__htmlbubContent {
@@ -615,7 +609,7 @@
     width: 100px;
     height: 45px;
     top: 18px;
-    left: 138px;
+    left: 116px;
   }
 
   .row__bootbubContent {
@@ -634,7 +628,7 @@
     width: 70px;
     height: 55px;
     top: 85px;
-    right: -9px;
+    right: -3px;
   }
 
   .row__cssbubContent {
@@ -653,7 +647,7 @@
     width: 55px;
     height: 46px;
     top: 27px;
-    left: 58px;
+    left: 40px;
   }
 
   .row__lessbubContent {
@@ -672,7 +666,7 @@
     width: 75px;
     height: 45px;
     top: 158px;
-    right: 11px;
+    right: 1px;
   }
 
   .row__aibubContent {
@@ -693,7 +687,7 @@
     width: 60px;
     height: 60px;
     top: 154px;
-    left: 25px;
+    left: 5px;
   }
 
   .row__psbubContent {
@@ -731,7 +725,7 @@
     width: 100px;
     height: 50px;
     top: 244px;
-    left: 28px;
+    left: 10px;
   }
 
   .row__jsbubContent {
@@ -747,6 +741,11 @@
   }
 
   @media (orientation:landscape) {
+
+    .row__htmlbub {
+      left: 115px;
+    }
+
     .row__ps {
       left: 86px;
     }
@@ -761,11 +760,11 @@
 
     .row__js {
       top: 236px;
-      left: 133px;
+      left: 110px;
     }
 
     .row__rwd {
-      right: 83px;
+      right: 110px;
     }
 
     .row__boot {
@@ -773,7 +772,11 @@
     }
 
     .row__cssbub {
-      right: -37px;
+      right: 105px;
+    }
+
+    .row__less {
+      left: 140px;
     }
 
   }
